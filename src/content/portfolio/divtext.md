@@ -10,8 +10,33 @@ license: "GPL-3.0"
 licenseUrl: "https://www.gnu.org/licenses/gpl-3.0.html"
 featured: false
 order: 4
-version: "1.1.0"
+version: "1.1.6"
 changelog:
+  - version: "1.1.6"
+    date: "2026-07-02T00:00:00.000Z"
+    changes:
+      - "Added a per-letter color picker to customize individual glyph cells"
+  - version: "1.1.5"
+    date: "2026-07-02T00:00:00.000Z"
+    changes:
+      - "Abstracted the font system and added full ASCII glyph coverage"
+      - "Added BEM and minimal CSS export modes"
+  - version: "1.1.4"
+    date: "2026-07-02T00:00:00.000Z"
+    changes:
+      - "Moved the code view into its own dedicated window"
+  - version: "1.1.3"
+    date: "2026-07-02T00:00:00.000Z"
+    changes:
+      - "Added a syntax-highlighted code block with a draw animation and collapsible intro"
+  - version: "1.1.2"
+    date: "2026-07-02T00:00:00.000Z"
+    changes:
+      - "Added dynamic version display, export modes, and per-word window titles"
+  - version: "1.1.1"
+    date: "2026-07-02T00:00:00.000Z"
+    changes:
+      - "Added a pixel-font word renderer with HTML export tools"
   - version: "1.1.0"
     date: "2026-07-01T00:00:00.000Z"
     changes:
