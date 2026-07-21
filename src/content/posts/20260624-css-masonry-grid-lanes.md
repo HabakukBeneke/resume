@@ -311,5 +311,3 @@ We faked this layout for a decade. Now we dont have to. Just tab through it befo
 - [Masonry and reading order — Rachel Andrew](https://rachelandrew.co.uk/archives/2024/05/26/masonry-and-reading-order/)
 - [CSSWG issue #11243: Masonry syntax debate](https://github.com/w3c/csswg-drafts/issues/11243)
 - [CSSWG issue #945: the original masonry use case](https://github.com/w3c/csswg-drafts/issues/945)
-</content>
-</invoke>
