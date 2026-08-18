@@ -130,7 +130,7 @@ const sortedProjects = await getAllProjects(true, true);
                 <h3 class="text-sm font-medium mb-3 secondary">
                   Version History
                 </h3>
-                <div class="space-y-3">
+                <div class="divide-y divide-gray-200 dark:divide-gray-700">
                   {project.changelog
                     .sort(
                       (a, b) =>
@@ -138,11 +138,11 @@ const sortedProjects = await getAllProjects(true, true);
                     )
                     .map((entry, entryIndex) => (
                       <div
-                        class={`changelog-entry ${entryIndex >= 3 ? "hidden changelog-extra" : ""}`}
+                        class={`changelog-entry py-3 first:pt-0 last:pb-0 ${entryIndex >= 3 ? "hidden changelog-extra" : ""}`}
                         data-changelog-group={`changelog-${index}`}
                       >
                         <div class="flex items-baseline gap-2 mb-1">
-                          <span class="text-xs font-medium text-gray-800 dark:text-gray-200">
+                          <span class="text-xs font-mono font-medium px-1.5 py-0.5 rounded bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200">
                             v{entry.version}
                           </span>
                           <span class="text-xs text-gray-500 dark:text-gray-400">
@@ -156,7 +156,7 @@ const sortedProjects = await getAllProjects(true, true);
                             )}
                           </span>
                         </div>
-                        <ul class="list-disc list-inside text-xs text-gray-600 dark:text-gray-400 space-y-1">
+                        <ul class="list-disc list-outside pl-4 text-xs text-gray-600 dark:text-gray-400 space-y-1">
                           {entry.changes.map((change) => (
                             <li>{change}</li>
                           ))}
@@ -168,14 +168,14 @@ const sortedProjects = await getAllProjects(true, true);
                   <div class="mt-3">
                     <button
                       type="button"
-                      class="primary-link text-xs see-more-btn"
+                      class="primary-link text-xs cursor-pointer see-more-btn"
                       data-target={`changelog-${index}`}
                     >
                       See more ({project.changelog.length - 3} more versions)
                     </button>
                     <button
                       type="button"
-                      class="primary-link text-xs see-less-btn hidden"
+                      class="primary-link text-xs cursor-pointer see-less-btn hidden"
                       data-target={`changelog-${index}`}
                     >
                       See less

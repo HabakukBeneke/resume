@@ -11,8 +11,16 @@ license: "GPL-3.0"
 licenseUrl: "https://www.gnu.org/licenses/gpl-3.0.html"
 featured: true
 order: 1
-version: "1.6.0"
+version: "1.6.4"
 changelog:
+  - version: "1.6.4"
+    date: "2026-08-18T00:00:00.000Z"
+    changes:
+      - "Changelog bullets that run onto a second line now line up under the text instead of under the dot"
+      - "Separated each version in the portfolio changelog with a divider and gave version numbers a monospaced badge"
+      - "Added a pointer cursor to the changelog see more / see less links"
+      - "Published a blog post on CSS flex-wrap: balance in Chrome 150"
+      - "Published a blog post on LeetCode interview theater"
   - version: "1.6.0"
     date: "2026-06-30T00:00:00.000Z"
     changes:
