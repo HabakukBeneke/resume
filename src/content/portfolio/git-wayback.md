@@ -11,8 +11,29 @@ license: "GPL-3.0"
 licenseUrl: "https://www.gnu.org/licenses/gpl-3.0.html"
 featured: false
 order: 2
-version: "0.7.17"
+version: "0.7.41"
 changelog:
+  - version: "0.7.41"
+    date: "2026-08-20T00:00:00.000Z"
+    changes:
+      - "Repository data now refreshes as soon as the project has new commits, instead of sitting a day out of date"
+      - "Added a refresh button that pulls fresh data on demand, with a confirmation and a cooldown between uses"
+      - "Recent commits show their full message: the short hash links to the commit on GitHub, and a button expands the body"
+      - "Redrew the brand mark as a two-level graph, with a simplified version for the browser tab"
+      - "The tagline now sits under the logo on every page, not only on the home page"
+      - "Added an error page, so a mistyped repository lands somewhere useful instead of on a raw error"
+      - "Widened the home page to line up with the header"
+  - version: "0.7.28"
+    date: "2026-08-18T00:00:00.000Z"
+    changes:
+      - "Rebuilt the evolution diagram on a canvas renderer, so repositories with thousands of files stay smooth instead of crawling"
+      - "Raised the limit on how much of a large repository is drawn before it gets folded into '+N' bubbles"
+      - "The file panel now renders only the rows on screen, so opening a big folder no longer freezes the page"
+      - "Connector lines fade from the colour of one bubble into the colour of the next, and bubble outlines are thinner"
+      - "Full-screen mode now shrinks the site header and floats the timeline over the graph, giving the visualization the whole window"
+      - "The play screen covers the full panel and dissolves into the graph instead of cutting away"
+      - "Added icons to the repository tabs"
+      - "Fixed the repository endpoint returning a 404 on every request"
   - version: "0.7.17"
     date: "2026-07-28T00:00:00.000Z"
     changes:
