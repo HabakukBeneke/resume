@@ -185,12 +185,7 @@ Under the conditions that:
 
 ## Author
 
-### Enrique Quero (Habakuk Beneke)
-
-- Website: [equero.dev](https://equero.dev)
-- GitHub: [@hbeneke](https://github.com/hbeneke)
-- LinkedIn: [equerodev](https://www.linkedin.com/in/equerodev/)
-- X (Twitter): [@habakukbeneke](https://x.com/habakukbeneke)
+[@hbeneke](https://github.com/hbeneke)
 
 ## Acknowledgments
 
