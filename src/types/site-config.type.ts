@@ -18,6 +18,7 @@ export interface SiteConfig {
   obfuscatedEmail: string;
   jobTitle: string;
   siteTitle: string;
+  motto: string;
   siteCreationYear: string;
   siteUrl: string;
   socialLinks: SocialLinks;

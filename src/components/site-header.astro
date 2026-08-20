@@ -1,7 +1,7 @@
 ---
 import MobileMenu from "@components/mobile-menu.astro";
 import SearchBox from "@components/search-box.astro";
-import { menuLinks } from "@site-config";
+import { menuLinks, siteConfig } from "@site-config";
 import { isActivePath } from "@utils/navigation";
 
 const url = new URL(Astro.request.url);
@@ -10,12 +10,21 @@ const isActive = (path: string) => isActivePath(url.pathname, path);
 
 <header
   id="main-header"
-  class="relative mb-16 flex items-center justify-between gap-2 z-40"
+  class="relative mb-16 flex items-end justify-between gap-2 z-40"
 >
-  <div class="flex-1 sm:flex-none">
+  <div class="flex flex-1 items-end gap-2 sm:flex-none">
+    <a
+      aria-label={`${siteConfig.siteTitle} — home`}
+      class="shrink-0 rounded-md transition-opacity duration-200 hover:opacity-80"
+      data-astro-prefetch
+      href="/"
+    >
+      <img alt="" aria-hidden="true" class="h-14 w-14" height="56" src="/favicon.svg" width="56" />
+    </a>
+
     <nav
       aria-label="Main menu"
-      class="-ms-4 mt-1 hidden sm:flex divide-x divide-dashed pt-0 primary"
+      class="hidden sm:flex divide-x divide-dashed pt-0 primary"
       id="navigation-menu"
     >
       {

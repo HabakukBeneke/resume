@@ -30,6 +30,7 @@ export const siteConfig: SiteConfig = {
   obfuscatedEmail: "hbeneke [at] proton [dot] me",
   jobTitle: "Frontend Developer",
   siteTitle: "Enrique Quero",
+  motto: "Never stop learning",
   siteCreationYear: "2024",
   siteUrl: "https://equero.dev",
   socialLinks: {
